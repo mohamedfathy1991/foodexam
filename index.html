@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="./css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="dashboard-main position-fixed z-3 d-flex">
+        <div class="dashboard pt-5">
+          <ul class="animation-ul ">
+            <li><a id="search" href="#home"> Search</a></li>
+            <li><a id="category" href="#abouts"> Categories</a></li>
+            <li><a id="area" href="#times"> Area</a></li>
+            <li><a id="Ingredient" href="#contacts"> Ingredients</a></li>
+            <li><a id="contacts" href="#"> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="vh-100 bg-white dash-board py-2 px-2">
+          <img src="./img/logo.png" alt="" class="logo" />
+          <i
+            class="fa-solid open-close-icon fa-2x fa-align-justify text-black"
+          ></i>
+          <div class="pb-2">
+            <i class="fa-solid fa-share-nodes text-black"></i>
+            <i class="fa-solid fa-globe text-black d-block"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home text-center text-white">
+      <div class="lds-spinner d-none">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- home page -->
+      <div class="home-card p-4">
+        <h1>home page</h1>
+
+        <div class="row" id="card"></div>
+      </div>
+
+      <!-- page search -->
+
+      <div class="search-page d-none">
+        <h1>search page</h1>
+        <div class="container">
+          <div class="d-flex p-3 justify-content-center">
+            <input
+              id="search-name"
+              type="text"
+              placeholder="Search By Name"
+              class="form-control w-50 mx-3 p2 bg-black"
+            />
+            <input maxlength="1"
+              id="search-litter"
+              type="text"
+              placeholder="Search By First Litter "
+              class="p-2 form-control w-50 mx-3 bg-black"
+            />
+          </div>
+          <div id="searchcard" class="row"></div>
+        </div>
+      </div>
+      <!-- category page -->
+      <div class="category d-none">
+        <div class="container">
+          <h1>Category page</h1>
+          <div id="datacategory" class="row"></div>
+        </div>
+      </div>
+
+      <!-- area page -->
+      <div class="area-page d-none">
+        <div class="container">
+          <h1>area page</h1>
+          <div id="areapage" class="row"></div>
+        </div>
+      </div>
+      <!-- ingrident page -->
+      <div class="Ingredient-page d-none">
+        <div class="container">
+          <h1>Ingredient page</h1>
+          <div id="data-Ingredient" class="row"></div>
+        </div>
+      </div>
+      <!-- contacts page -->
+      <div class="contacts-page d-none">
+        <div class="container">
+          <h1>contacts page</h1>
+          <div class="container">
+            <div class="row">
+              <div class="offset-md-2 col-md-8 g-5 ">
+                <div class="form ms-auto  ">
+                  <div class="d-flex   mb-4">
+                    <div class="me-4 position-relative name-form">
+                      <input
+                        id="name"
+                        placeholder="enter name"
+                        type="text"
+                        class="form-control w-100"
+                      />
+                      <div class="bottom-100 d-none name position-absolute alert alert-danger" role="alert">
+                        enter valid name number not allow
+                      </div>
+                    </div>
+                    <div class=" position-relative age-form">
+                      <input
+                        id="age"
+                        placeholder="enter age"
+                        type="number "
+                        class="form-control w-100"
+                      />
+                      <div class="bottom-100 d-none age position-absolute alert alert-danger" role="alert">
+                        enter valid age  max age 99 
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="me-4 position-relative  telephone-form">
+                      <input
+                      id="telphone"
+                      placeholder="enter telephone"
+                      type="tel"
+                      class="form-control w-100 "
+                    />
+                    <div class="bottom-100 d-none telephone position-absolute alert alert-danger" role="alert">
+                      A valid telphone 
+                    </div>
+
+                    </div>
+                    <div class="position-relative  email-form">
+                      <input
+                      id="email"
+                      placeholder="enter email"
+                      type="email"
+                      class="form-control w-100"
+                    />
+                    <div class="bottom-100 d-none email position-absolute alert alert-danger" role="alert">
+                      enter valid email  ex omar@yahoo.com
+                    </div>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-4">
+                   <div class="me-4 position-relative password-form">
+                    <input
+                    id="password"
+                    placeholder="enter password"
+                    type="password"
+                    class="form-control w-100  position-relative"
+                  />
+                  <div class="bottom-100 d-none password position-absolute alert alert-danger" role="alert">
+                    enter valid password  letter only
+                  </div>
+                     
+                   </div>
+
+                   <div class="checkpassword-form position-relative">
+                    <input
+                    id="checkpassword"
+                    placeholder=" re enter password"
+                    type="password"
+                    class="form-control w-100"
+                  />
+                  <div class="bottom-100 d-none checkpassword position-absolute alert alert-danger" role="alert">
+                    not match 
+                  </div>
+                   </div>
+                   
+                  </div>
+                  
+                    <button class="mt-3 d-block  sendform btn btn-danger disabled">
+                      send message
+                    </button>
+                  
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- details -->
+      <div class="detalis-page d-none">
+        <div class="container pt-5">
+          <div id="details" class="details pt-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
